@@ -1,16 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export const Counter = (props) => {
-	let placeholder = "000000";
+export const Timer = (props) => {
+	let placeholder = "00000000";
 
 	let seconds = props.seconds.toString();
-	let icon = <i className="far fa-clock"></i>;
 
 	let output = (
 		placeholder.split("").slice(seconds.length).join("") + seconds
 	).split("");
-	output.unshift(icon);
 
 	return (
 		<div className="clock">
@@ -25,6 +23,6 @@ export const Counter = (props) => {
 	);
 };
 
-Counter.propTypes = {
+Timer.propTypes = {
 	seconds: PropTypes.string,
 };

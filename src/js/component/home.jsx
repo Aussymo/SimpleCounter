@@ -1,5 +1,5 @@
 import React from "react";
-import { Counter } from "./Counter.js";
+import { Timer } from "./Counter.js";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
@@ -7,7 +7,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 export function Home() {
 	return (
 			<div>
-				<Counter />
+				<Timer />
 			</div>
 	);
 }

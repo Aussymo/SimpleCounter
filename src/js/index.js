@@ -9,7 +9,7 @@ import Bootstrap from "bootstrap";
 import "../styles/index.css";
 
 //import your own components
-import { Counter } from "./component/Counter.js";
+import { Timer } from "./component/Timer.js";
 
 //render your react application
 
@@ -19,6 +19,6 @@ const interval = setInterval(() => {
 	if (secs == 999999) {
 		clearInterval(interval);
 	}
-	ReactDOM.render(<Counter seconds={secs} />, document.querySelector("#app"));
+	ReactDOM.render(<Timer seconds={secs} />, document.querySelector("#app"));
 	secs++;
 }, 1000);
